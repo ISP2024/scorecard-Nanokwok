@@ -42,9 +42,6 @@ class Scorecard:
     def __iter__(self) -> Iterable[float]:
         return iter(self.scores)
 
-    def __lt__(self, other: float) -> bool:
-        return min(self.scores) < other
-
 
 def print_scores(score_card: Scorecard) -> None:
     """Print statistics for the scorecard and the actual scores."""
